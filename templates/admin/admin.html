@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../static/css/alayout_style.css">
+
+       
+
+        <title>ADMIN - F.D.</title>
+
+    </head>
+
+    <body>
+
+        <div class="grid-wrapper">
+            <header>
+                <div id="area-logo">
+                    <img src="../../static/img/log_dist.png" class="logo">
+                    <h1 class="logo_name">Forense<span class="branco">Digital</span></h1>
+                </div>
+            
+            </header>
+            
+            <nav class="menu">  
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="{{url_for('sobre')}}">Sobre</a>
+
+                </ul>
+            </nav>
+            
+                       
+                {% block content %}
+
+                {% endblock %}
+
+
+    </body>
+</html>

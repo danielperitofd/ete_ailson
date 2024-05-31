@@ -1,0 +1,23 @@
+
+{% extends '/admin/base.html' %}
+
+{% block content %}
+
+  <div class="content">
+    <div class="card">
+      <h2>Produtos</h2>
+      <img src="../../static/admin/img/produtos.png" alt="Imagem do produto">
+      <div class="card-content">
+        <h3>Produtos Cadastrados: <span id="produtosCount">0</span></h3>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Categorias</h2>
+      <img src="../../static/admin/img/categoria.png" alt="Imagem da categoria">
+      <div class="card-content">
+        <h3>Categorias Cadastradas: <span id="categoriasCount">0</span></h3>
+      </div>
+    </div>
+  </div>
+
+ {% endblock %}

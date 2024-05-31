@@ -1,0 +1,369 @@
+alayout_style.css :::::::::::::
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #171616a9;
+}
+
+.grid-wrapper{
+    display: grid;
+    /*grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px auto;*/
+    grid-template-rows: repeat(4, auto);
+    
+    /*grid-template-columns: 240px 1fr 1fr 1fr;*/
+    /* grid-template-columns: 240px repeat(3, 1fr); */
+    grid-template-columns: 120px 1fr;
+
+    /*colocando distâncias entre celulas internamente*/
+    gap: 1rem;
+
+}
+
+.grid-wrapper>main{
+    background-color: rgb(245, 139, 233);
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+/* FIM de CONFIGURAÇÔES LAYOUT */
+
+
+article_style.css :::::::::::::::
+
+article {
+    background-color: rgb(146, 145, 145);
+    min-height: 150px;
+    margin-left: auto;
+    border-radius: 5px;
+    align-items: center;
+    
+}
+
+
+cards_style.css :::::::::::
+  
+  .card {
+    width: 330px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+ 
+  }
+
+  .card img {
+    width: 170px;
+    height: 50px;
+    border-radius: 5%;
+  }
+
+  .card h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    font-size: 12px;
+    color: rgb(11, 44, 3);
+    margin-bottom: 10px;
+  }
+
+  .card a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+
+   /* .container {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }  */
+
+foot_style.css :::::::::::::::::
+
+
+footer {
+    background-color: #575757;
+    grid-column: 1 / -1;
+    padding: 1px;
+    text-align: center;
+    text-shadow: #575757;
+    text-decoration-color: aqua;
+}
+
+header_style.css ::::::::::::::::
+
+
+header {
+    background-color: #0f0f0f;
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+/* CONFIG HEADER */
+
+#area-logo {
+    padding: 10px;
+    display: flex; /* Usa flexbox para alinhar a logo e o texto horizontalmente */
+    align-items: center; /* Alinha os elementos verticalmente */
+    
+}
+
+.logo {
+    margin-right: 5px; /* Adiciona um espaçamento à direita da logo */
+    max-width: 75px; /* Define a largura máxima da imagem como 100 pixels */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+h1.logo_name {
+    color: #4e4e4e;
+    font-size: 2.1em;
+}
+.branco{
+    color: white;
+}
+
+nav_style.css ::::::::::::::::
+
+/* nav_style.css */
+
+nav {
+    padding: 4px;
+    background-color: rgb(63, 64, 64);
+    grid-row: 2 / -1;
+    align-items: flex-start;
+    text-align: letf;
+    box-sizing: border-box;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    text-decoration:none;
+}
+
+ nav.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 3px;
+    font-size: 16px;
+    color: #ffffff; /* Defina a cor do texto dos itens do menu */
+} 
+
+nav.menu a:hover {
+    background-color: darkblue;
+    color: white;
+    text-decoration: underline;
+}
+
+section_style.css ::::::::::::::
+
+
+
+section {
+    background-color: #eaffbd;
+    grid-column: 2 / -1;
+    padding: 9px;
+}
+
+.marquee-container {
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.marquee-content {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+@keyframes marquee {
+    /* 0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); } */
+}
+
+esses estilos estão na hierarquia de pastas:
+projeto > static > css
+
+agora veja minhas paginas html
+
+a primeira é index.html
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../static/css/alayout_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/header_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/nav_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/section_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/article_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/cards_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/foot_style.css">
+
+        <title>FORENSE DIGITAL</title>
+
+    </head>
+
+    <body>
+
+        <div class="grid-wrapper">
+            <header>
+                <div id="area-logo">
+                    <img src="../../static/img/log_dist.png" class="logo">
+                    <h1 class="logo_name">Forense<span class="branco">Digital</span></h1>
+                </div>
+            
+            </header>
+            
+            <nav class="menu">  
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Sobre</a>
+                    <a href="news.html">Notícias</a>
+                    <a href="osint.html">Osint Tools</a>
+                    <a href="investig.html">Investigações</a>
+                    <a href="donwloads.html">Downloads</a>
+                    <a href="contact.html">Contato</a>
+                </ul>
+            </nav>
+            
+            <section class="marquee-container">
+
+                <div class="marquee-content">
+                    <div class="marquee">
+                        <marquee>
+                            <b>|:   Como identificar e corrigir pontos fracos na segurança de TI com análise de vulnerabilidade.   :|</b>
+                            <b>|:   Desvendando as Mentiras Digitais em um Mundo Conectado   :|</b>
+                            <b>|:   Por que o mundo precisa do Superman da Cibersegurança   :|</b>
+                            <b>|:   Guia prático para implementar soluções de TI   :|</b>
+                        </marquee>
+                    </div>
+                </div> 
+
+            </section>
+
+                <main class="content">
+                    {% block main %}
+                    
+                    {% endblock %}
+                </main>  
+            
+            <footer>
+                <p><a class="footer"><b>Totos os direitos reservados | Forense Digital</b></a></p>
+            
+            </footer>
+
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const links = document.querySelectorAll('nav.menu a');
+        
+                links.forEach(link => {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault(); // Evita que o link recarregue a página
+        
+                        const pageUrl = this.getAttribute('href');
+        
+                        fetch(pageUrl)
+                            .then(response => response.text())
+                            .then(html => {
+                                document.querySelector('main').innerHTML = html;
+                            })
+                            .catch(error => console.error('Error fetching page:', error));
+                    });
+                });
+            });
+        </script>
+        
+    </body>
+</html>
+
+a segunda é: main.html
+
+{% extend 'site/index.html' %}
+
+{% block main %}
+
+    <!-- <div class="content">
+      <div class="card">
+        <h2>Produtos</h2>
+        <img src="../../static/admin/img/produtos.png" alt="Imagem do produto">
+        <div class="card-content">
+          <h3>Produtos Cadastrados: <span id="produtosCount">0</span></h3>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Categorias</h2>
+        <img src="../../static/admin/img/categoria.png" alt="Imagem da categoria">
+        <div class="card-content">
+          <h3>Categorias Cadastradas: <span id="categoriasCount">0</span></h3>
+        </div>
+      </div>
+    </div> -->
+    
+    <article>
+        <div class="card">
+            <h1>Investigação Top</h1>
+            <img src="../../static/img/notice1.jfif" alt="Imagem da Notícia">
+            <h3>Hoje acontece evento de investigação criminal na area de ciências digitais forenses para todo o Brasil...</h3>
+            <a href="#">Leia mais</a>
+        </div>
+    </article>
+
+    <article>
+        <div class="card">
+            <h1>O Perito Digital Conectado</h1>
+            <img src="../../static/img/notice3.jpg" alt="Imagem da Notícia">
+            <h3>Novas tecnologias surgem a favor de resolução de crimes digitais...</h3>
+            <a href="#">Leia mais</a>
+        </div>
+    </article>
+
+    <article>
+        <div class="card">
+            <h1>Como é feita uma investigação</h1>
+            <img src="../../static/img/notice2.webp" alt="Imagem da Notícia">
+            <h3>As principais ferramentas utilizadas por peritos digitais para investigação...</h3>
+            <a href="#">Leia mais</a>
+        </div>
+    </article>
+
+    <article>
+        <div class="card">
+            <h1>Preservação de Prova o que você precisa saber</h1>
+            <img src="../../static/img/notice4.jfif" alt="Imagem da Notícia">
+            <h3>A montagem de uma cadeia de custódia para preservar toda informação coletada...</h3>
+            <a href="#">Leia mais</a>
+        </div>
+    </article>
+
+{% endblock %}
+
+estão na hierarqui de pastas: 
+projeto > templates > site
+
+porque meu main não aparece dentro do bloco que criei no index?
+
+                <main class="content">
+                    {% block main %}
+                    
+                    {% endblock %}
+                </main>  
+

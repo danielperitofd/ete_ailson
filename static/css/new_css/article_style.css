@@ -1,0 +1,13 @@
+article {
+    background-color: rgb(224, 224, 224);
+    min-height: 150px;
+    border-radius: 5px;
+}
+
+.grid-wrapper>main{
+    background-color: rgb(69, 65, 68);
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}

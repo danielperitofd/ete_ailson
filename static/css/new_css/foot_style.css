@@ -1,0 +1,10 @@
+
+footer {
+    background-color: #575757;
+    grid-column: 1 / -1;
+    padding: 1px;
+    text-align: center;
+    text-shadow: #575757;
+    text-decoration-color: aqua;
+}
+

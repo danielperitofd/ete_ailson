@@ -1,0 +1,33 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            display: 40%;
+            flex-wrap: wrap;
+        }
+        .left-column {
+            flex: 0 0 30%; /* 30% de largura */
+            padding-right: 20px;
+        }
+        .center-column {
+            flex: 0 0 30%; /* 40% de largura */
+            text-align: center;
+            padding: 20px;
+        }
+        .right-column {
+            flex: 0 0 30%; /* 30% de largura */
+            overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+            max-height: 660px; /* Altura máxima para a coluna da direita */
+        }
+        .image-container img {
+            width: 100%; /* Imagem responsiva ocupando toda a largura da div */
+            height: auto; /* Altura automática para manter proporção */
+        }
+        h1 {
+            color: #333;
+        }

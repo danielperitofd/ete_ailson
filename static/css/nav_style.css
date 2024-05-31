@@ -1,0 +1,31 @@
+/* nav_style.css */
+
+nav {
+    padding: 4px;
+    background-color: rgb(63, 64, 64);
+    grid-row: 2 / -1;
+    align-items: flex-start;
+    text-align: letf;
+    box-sizing: border-box;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    text-decoration:none;
+}
+
+ nav.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 3px;
+    font-size: 16px;
+    color: #ffffff; /* Defina a cor do texto dos itens do menu */
+} 
+
+nav.menu a:hover {
+    background-color: darkblue;
+    color: white;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../static/css/alayout_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/header_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/nav_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/section_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/article_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/cards_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/foot_style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/style_about.css">
+       
+
+        <title>FORENSE DIGITAL</title>
+
+    </head>
+
+    <body>
+
+        <div class="grid-wrapper">
+            <header>
+                <div id="area-logo">
+                    <img src="../../static/img/log_dist.png" class="logo">
+                    <h1 class="logo_name">Forense<span class="branco">Digital</span></h1>
+                </div>
+            
+            </header>
+            
+            <nav class="menu">  
+                <ul>
+                    <a href="{{url_for('home')}}">Home</a>
+                    <a href="{{url_for('about')}}">Sobre</a>
+                    <a href="news.html">Notícias</a>
+                    <a href="osint.html">Osint Tools</a>
+                    <a href="investig.html">Investigações</a>
+                    <a href="donwloads.html">Downloads</a>
+                    <a href="contact.html">Contato</a>
+                </ul>
+            </nav>
+            
+            <section class="marquee-container">
+
+                <div class="marquee-content">
+                    <div class="marquee">
+                        <marquee>
+                            <b>|:   Como identificar e corrigir pontos fracos na segurança de TI com análise de vulnerabilidade.   :|</b>
+                            <b>|:   Desvendando as Mentiras Digitais em um Mundo Conectado   :|</b>
+                            <b>|:   Por que o mundo precisa do Superman da Cibersegurança   :|</b>
+                            <b>|:   Guia prático para implementar soluções de TI   :|</b>
+                        </marquee>
+                    </div>
+                </div> 
+
+            </section>
+
+                
+                {% block content %}
+
+                {% endblock %}
+
+           
+            <footer>
+                <p><a class="footer"><b>Totos os direitos reservados | Forense Digital</b></a></p>
+            
+            </footer>
+
+        </div>
+
+
+    </body>
+</html>

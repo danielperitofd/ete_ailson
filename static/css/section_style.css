@@ -1,0 +1,25 @@
+
+
+section {
+    background-color: #eaffbd;
+    grid-column: 2 / -1;
+    padding: 9px;
+}
+
+.marquee-container {
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.marquee-content {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+@keyframes marquee {
+    /* 0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); } */
+}

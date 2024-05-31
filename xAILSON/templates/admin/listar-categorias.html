@@ -1,0 +1,29 @@
+
+{% extends '/admin/base.html' %}
+
+{% block content %}
+
+  <div class="content">
+    <div class="container">
+      <h1>Lista de categorias</h1>
+      <table>
+        <tr>
+          <td>ID</td>
+          <td>Nome</td>
+          <td>Descrição</td>
+        </tr>
+
+        {% for categorias in categorias %}
+        <tr>
+          <td>{{categorias['id']}}</td>
+          <td>{{categorias['nome']}}</td>
+          <td>{{categorias['descricao']}}</td>
+        </tr>
+        {% endfor %}
+
+      </table>
+
+    </div>
+  </div>
+
+ {% endblock %}

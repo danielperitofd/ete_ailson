@@ -1,0 +1,28 @@
+{% extends 'site/base.html' %}
+
+{% block content %}
+
+    <main class="base">
+
+        <div class="container">
+            <div class="left-column">
+                <div class="image-container">
+                    <img src="{{ url_for('static', filename='img/img_forense1.jpeg') }}" alt="img_forense1">
+                </div>
+            </div>
+            <div class="center-column">
+                <h1>FORENSE DIGITAL</h1>
+            </div>
+            <div class="right-column">
+                <!-- Conteúdo da coluna da direita -->
+                <div style="height: 330px; border: 1px solid #ccc; margin-bottom: 10px;"></div>
+                <div style="height: 330px; border: 1px solid #ccc; margin-bottom: 10px;"></div>
+                <div style="height: 330px; border: 1px solid #ccc; margin-bottom: 10px;"></div>
+                <div style="height: 330px; border: 1px solid #ccc; margin-bottom: 10px;"></div>
+                <div style="height: 330px; border: 1px solid #ccc; margin-bottom: 10px;"></div>
+                <div style="height: 330px; border: 1px solid #ccc; margin-bottom: 10px;"></div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

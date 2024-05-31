@@ -1,0 +1,264 @@
+/*limpando as formatações padrão*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #171616a9;
+}
+
+
+/* ÁREA DE MEU CABEÇALHO */
+#area-cabecalho{
+    background-color: #0f0f0f;
+    padding: 15px;
+    display: flex; /* Adiciona um display flex para que os elementos filhos se alinhem horizontalmente */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Alinha os elementos horizontalmente */
+    text-align: center; /* Alinha o texto dos elementos filhos */
+;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited{
+    color: #fff;
+    padding: 8px 12px;
+}
+
+#area-cabecalho a:hover{
+    color: #00e7f7;
+    background: rgb(212, 16, 153);
+    text-decoration: none;
+    
+}
+
+/* ========================= */
+
+
+#area-logo, #area-menu{
+    padding: 10px;
+
+}
+
+#area-logo {
+    display: flex; /* Usa flexbox para alinhar a logo e o texto horizontalmente */
+    align-items: center; /* Alinha os elementos verticalmente */
+}
+
+ /* =========================== SÓ PARA IMAGENS ==================================== */
+
+.logo {
+    margin-right: 10px; /* Adiciona um espaçamento à direita da logo */
+    max-width: 75px; /* Define a largura máxima da imagem como 100 pixels */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+.img_notice {
+    margin-right: 10px; /* Adiciona um espaçamento à direita da logo */
+    max-width: 320px; /* Define a largura máxima da imagem como 100 pixels */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+ /* ================================================================================= */
+
+/*formatações menu*/
+a {
+    text-decoration: none;
+}
+
+ /* =========================== FORMATAÇÃO DE TEXTO ================================= */
+
+a:link,  a:visited{
+    color: #f7b600;
+    
+}
+
+a:hover{
+   text-decoration: underline;
+}
+
+
+.postagem-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
+}
+
+
+
+/*formatações gerais*/
+
+h1{
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+h2{
+    color: #f7b600;
+}
+h3{
+    color: #f6f6f6;
+    /*background: #ccc;*/
+    padding: 5px;
+}
+
+.branco{
+    color: white;
+}
+.data-postagem{
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+   
+}
+
+#area-principal{
+ 
+    
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+    
+    }
+
+
+#area-postagens{
+    width: 600px;
+    float: left;
+}
+.postagem {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: white;
+}
+.conteudo-lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+#area-lateral{
+    width: 250px;
+    float: right;
+    
+}   
+#rodape{
+    text-align: center;
+    padding: 20px;
+    background-color: #06ad22;
+    border-top: 1px solid #ddd;
+    clear: both; /* Limpa floats e evita sobreposição */
+    width: 100%; /* Garante largura total */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    position: relative; /* Define posição relativa */
+    z-index: 1; /* Garante que o rodapé esteja na frente dos cards */
+    margin-top: 20px; /* Margem superior para separar dos cards */
+    
+}
+
+/* ================ CONTEINER BODY ========================== */
+
+.container {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  
+  .card {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 20%;
+  }
+
+  .card h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  .card a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+
+/* ==================================================================== */
+.elementor-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.elementor-post {
+    width: 48%; /* Ajuste conforme necessário para o layout desejado */
+    margin-bottom: 20px;
+    background-color: #87def8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.elementor-post__thumbnail {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.elementor-post__text {
+    padding: 15px;
+}
+
+.elementor-post__title {
+    font-size: 20px;
+    color: rgb(56, 126, 190);
+    margin-bottom: 10px;
+}
+
+.elementor-post__excerpt {
+    font-size: 16px;
+    color: #666;
+}
+
+.elementor-post__meta-data {
+    font-size: 14px;
+    color: rgb(117, 57, 94);
+    margin-bottom: 10px;
+}
+
+.elementor-post__read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.elementor-post__read-more:hover {
+    text-decoration: underline;
+}

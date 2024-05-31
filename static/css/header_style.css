@@ -1,0 +1,28 @@
+
+header {
+    background-color: #0f0f0f;
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+/* CONFIG HEADER */
+
+#area-logo {
+    padding: 10px;
+    display: flex; /* Usa flexbox para alinhar a logo e o texto horizontalmente */
+    align-items: center; /* Alinha os elementos verticalmente */
+    
+}
+
+.logo {
+    margin-right: 5px; /* Adiciona um espaçamento à direita da logo */
+    max-width: 75px; /* Define a largura máxima da imagem como 100 pixels */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+h1.logo_name {
+    color: #4e4e4e;
+    font-size: 2.1em;
+}
+.branco{
+    color: white;
+}

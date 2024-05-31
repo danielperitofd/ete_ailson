@@ -1,0 +1,20 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #171616a9;
+}
+
+.grid-wrapper{
+    display: grid;
+    /*grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px auto;*/
+    grid-template-rows: repeat(4, auto);
+    
+    /*grid-template-columns: 240px 1fr 1fr 1fr;*/
+    /* grid-template-columns: 240px repeat(3, 1fr); */
+    grid-template-columns: 120px 1fr;
+
+    /*colocando distâncias entre celulas internamente*/
+    gap: 1rem;
+
+}
+/* FIM de CONFIGURAÇÔES LAYOUT */
+

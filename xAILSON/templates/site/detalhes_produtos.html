@@ -1,0 +1,19 @@
+{% extends 'site/base.html' %}
+
+{% block content %}
+
+<div class="content">
+  {% for i in range(categorias | length) %}
+    <div class="column">
+      {% set categoria = categorias[i] %}
+      {% set imagem_base64 = imagens_base64[i] %}
+      <img src="data:image/jpg;base64,{{ imagem_base64 }}" alt="Imagem do prato">
+      <div class="title-area">
+        <h2>{{ categoria['nome'] }}</h2>
+      </div>
+      <button class="button">Ver mais</button>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

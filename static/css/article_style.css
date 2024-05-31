@@ -1,0 +1,12 @@
+article {
+    background-color: rgb(146, 145, 145);
+    min-height: 150px;
+    margin-left: auto;
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
